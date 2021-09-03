@@ -1,5 +1,5 @@
 
-public class TotalsaralyTest {
+public class TotalsaralyTest extends TotalsaralyDemo{
 	private String idmanager;
 	private String name;
 	private int salary;
@@ -15,23 +15,30 @@ public class TotalsaralyTest {
 	
 	
 	public String getidmanager() {
-		return idmanager;
+		return this.idmanager;
 	}
 
 
 	public String getname() {
-		return name;
+		return this.name;
 	}
 
 
 	public int getsalary() {
-		return salary;
+		return this.salary;
+	}
+	
+	public int getsales() {
+		return this.sales;
 	}
 
-
-	public int salary() {
-		int sum = 0;
-		sum = salary*500;
+	public double salary() {
+		double sum = 0;
+		if(this.sales<=50000) {
+			sum = salary+(salary*0.05);
+		}else
+			sum = this.salary+(this.salary*0.10);
+		
 		return sum;
 	}
 	

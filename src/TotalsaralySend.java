@@ -1,54 +1,53 @@
 import java.util.Scanner;
-public class TotalsaralySend {
-
-	public static void main(String[] args) {
-		TotalsaralyTest t [][] = new TotalsaralyTest[2][3];
+public class TotalsaralySend extends TotalsaralyDemo{
+	 
+	
+	public static void main (String[] args) {
+		TotalsaralyTest t = new TotalsaralyTest();
+		String idmanager;
+		 String name;
+		 int salary;
+		 int sales;
 		Scanner in = new Scanner(System.in);
-		String fname,lname;
-		int i = 0 ,j = 0, time; 
-		char yn = 'y';
-		
-		for(i=0; i< t.length ; i++) {
-			
-			for(j=0; j < 3 ; j++) {
-				switch (j) {
-				case 0:
-					System.out.print("Enter your First name : ");
-			        fname = in.nextLine();
-			        t[i][j].setFname(fname);
-					break;
-				case 1:
-					System.out.print("Enter your Last name : ");
-			        lname = in.nextLine();
-			        t[i][j].setLname(lname);
-					break;
-				case 2:
-					System.out.print("How much hours : ");
-					time = in.nextInt();
-			        t[i][j].setTime(time);
-					break;
-				}
-			}
-			
-			System.out.println("Col"+i);
-		}
-		
-//			System.out.print("Enter your First name : ");
-//	        fname = in.nextLine();
-//	        System.out.print("Enter your Last name : ");
-//	        lname = in.nextLine();
-//	        System.out.print("How much hours : ");
-//	        time = in.nextInt();
-//	        t.TotalsaralyTest( fname, lname,time);
-//	        System.out.print("Do you want to add (Y/N) : ");
-//	        yn = in.next().charAt(0);
-//	        i= i+1;
-//		
-		
-		
-		
-		
-        
+			System.out.print("Enter your ID : ");
+			idmanager = in.nextLine();
+	        System.out.print("Enter your Name : ");
+	        name = in.nextLine();
+	        System.out.print("Enter your salary : ");
+	        salary = in.nextInt();
+	        System.out.println("30/09/2020 ");
+	        System.out.print("Enter your sales : ");
+	        sales = in.nextInt();
+	        t.TotalsaralyTest( idmanager, name,salary,sales);
+//	        System.out.println("Salary : "+t.salary());
 	}
-
+//	public double getSum() {
+//		TotalsaralyTest t = new TotalsaralyTest();
+//		double sum = t.getSum();
+//		return sum;
+//	}
+	public String toString() {
+		TotalsaralyTest t = new TotalsaralyTest();
+		String name = t.getname();
+		return name;
+	}
 }
+
+
+//public static void main(String[] args) {
+//	TotalsaralyTest t = new TotalsaralyTest();
+//	Scanner in = new Scanner(System.in);
+//	String idmanager,name;
+//	int salary;
+//	int sales;
+//		System.out.print("Enter your ID : ");
+//		idmanager = in.nextLine();
+//        System.out.print("Enter your Name : ");
+//        name = in.nextLine();
+//        System.out.print("Enter your salary : ");
+//        salary = in.nextInt();
+//        System.out.println("30/09/2020 ");
+//        System.out.print("Enter your sales : ");
+//        sales = in.nextInt();
+//        t.TotalsaralyTest( idmanager, name,salary,sales);
+//}
