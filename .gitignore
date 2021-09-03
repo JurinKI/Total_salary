@@ -25,3 +25,4 @@ hs_err_pid*
 # Compiled class file
 .classpath
 .project
+/bin/
