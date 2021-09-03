@@ -1,57 +1,37 @@
 
 public class TotalsaralyTest {
-	private String fname;
-	private String lname;
-	private int time;
+	private String idmanager;
+	private String name;
+	private int salary;
+	private int sales;
 	
-	
-	public void TotalsaralyTest(String fname , String lname,int time ) {
-        this.fname = fname;
-        this.lname = lname;
-		this.time = time;
+	public void TotalsaralyTest(String idmanager , String name,int salary ,int sales) {
+        this.idmanager = idmanager;
+        this.name = name;
+		this.salary = salary;
+		this.sales = sales;
     }
 	
 	
 	
-	public String getFname() {
-		return fname;
+	public String getidmanager() {
+		return idmanager;
 	}
 
 
-
-	public void setFname(String fname) {
-		this.fname = fname;
+	public String getname() {
+		return name;
 	}
 
 
-
-	public String getLname() {
-		return lname;
+	public int getsalary() {
+		return salary;
 	}
-
-
-
-	public void setLname(String lname) {
-		this.lname = lname;
-	}
-
-
-
-	public int getTime() {
-		return time;
-	}
-
-
-
-	public void setTime(int time) {
-		this.time = time;
-	}
-
 
 
 	public int salary() {
 		int sum = 0;
-		sum = time*500;
+		sum = salary*500;
 		return sum;
 	}
 	
