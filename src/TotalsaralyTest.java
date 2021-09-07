@@ -1,11 +1,11 @@
 
-public class TotalsaralyTest extends TotalsaralyDemo{
+public class TotalsaralyTest extends TotalsaralySend{
 	private String idmanager;
 	private String name;
 	private int salary;
 	private int sales;
 	
-	public void TotalsaralyTest(String idmanager , String name,int salary ,int sales) {
+	public void TotalsaralyTest (String idmanager , String name,int salary ,int sales) {
         this.idmanager = idmanager;
         this.name = name;
 		this.salary = salary;
