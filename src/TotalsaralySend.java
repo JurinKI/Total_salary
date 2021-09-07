@@ -27,7 +27,7 @@ public class TotalsaralySend extends TotalsaralyDemo{
         sales = in.nextInt();
 	    t.TotalsaralyTest( idmanager, name,salary,sales);
 	    System.out.println("Name : "+t.getname());
-	    System.out.println("Salary5 : "+t.salary());
+	    System.out.println("Salary : "+t.allSalary());
 	    
 	}
 	

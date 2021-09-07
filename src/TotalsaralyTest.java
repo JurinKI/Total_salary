@@ -32,12 +32,22 @@ public class TotalsaralyTest extends TotalsaralySend{
 		return this.sales;
 	}
 
-	public double salary() {
+	public double allSalary() {
 		double sum = 0;
-		if(sales<=50000) {
+		if(salary<=10000)
+		{
+			if(sales<=50000) {
 			sum = salary+(salary*0.05);
 		}else
 			sum = salary+(salary*0.10);
+		}
+		
+		else {
+			if(sales<=100000) {
+				sum = salary+(salary*0.05);
+			}else
+				sum = salary+(salary*0.10);
+		}
 		
 		return sum;
 	}
