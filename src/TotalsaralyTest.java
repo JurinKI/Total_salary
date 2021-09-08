@@ -38,7 +38,9 @@ public class TotalsaralyTest extends TotalsaralySend{
 			sum = salary+(salary*0.05);
 		}else
 			sum = salary+(salary*0.10);
-		
+		if(sum<12000) {
+			sum = 12000;
+		}
 		return sum;
 	}
 	
