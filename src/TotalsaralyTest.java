@@ -1,17 +1,18 @@
-
 public class TotalsaralyTest extends TotalsaralySend{
 	private String idmanager;
 	private String name;
 	private int salary;
-	private int sales;
+	private double sales;
+
+	public TotalsaralyTest ( ) {
+        
+    }
 	
-	public void TotalsaralyTest (String idmanager , String name,int salary ,int sales) {
+	public  TotalsaralyTest (String idmanager , String name,int salary ) {
         this.idmanager = idmanager;
         this.name = name;
 		this.salary = salary;
-		this.sales = sales;
     }
-	
 	
 	
 	public String getidmanager() {
@@ -28,11 +29,17 @@ public class TotalsaralyTest extends TotalsaralySend{
 		return this.salary;
 	}
 	
-	public int getsales() {
+	public double getsales() {
 		return this.sales;
 	}
 
-	public double allSalary() {
+	public void setSales(double sales) {
+		this.sales = sales;
+	}
+
+
+
+	public double salary() {
 		double sum = 0;
 		if(salary<=10000)
 		{
@@ -48,8 +55,11 @@ public class TotalsaralyTest extends TotalsaralySend{
 			}else
 				sum = salary+(salary*0.10);
 		}
-		
 		return sum;
+	}
+	
+	public String toString() {
+		return "ManagerID :  " + this.idmanager + "   ManagerName :   " + this.name + "   Salary :   " + this.salary;
 	}
 	
 }
