@@ -42,7 +42,10 @@ public class TotalsaralyTest extends TotalsaralySend{
 
 	public double salary() {
 		double sum = 0;
-		if(sales<=50000) {
+		if(salary<15000 && sales>100001){
+			sum = salary + 5000;
+		}
+		else if(sales<=50000) {
 			sum = salary+(salary*0.05);
 		}else
 			sum = salary+(salary*0.10);
