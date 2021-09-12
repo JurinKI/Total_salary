@@ -43,15 +43,15 @@ public class TotalsaralyTest extends TotalsaralySend{
 	public double salary() {
 		double sum = 0;
 		if(sales<=50000) {
-			sum = salary+(salary*0.05);
+			sum = salary+(sales*1.05);
 		}else
-			sum = salary+(salary*0.10);
+			sum = salary+(sales*1.10);
 		
 		return sum;
 	}
 	
 	public String toString() {
-		return "ManagerID :  " + this.idmanager + "   ManagerName :   " + this.name + "   Salary :   " + this.salary;
+		return  "   ManagerName :   " + this.name ;
 	}
 	
 }
